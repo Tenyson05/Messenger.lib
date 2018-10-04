@@ -2,9 +2,10 @@ package phones;
 import Message.Message;
 import Storage.Google;
 import protocols.MessageProtocol;
+import Storage.FileStorageProvider;
 public final class Android extends Phone implements MessageProtocol {
 	
-	public Android() {
+	public Android(FileStorageProvider fsp) {
 		super(new Google());
 	}
 	
